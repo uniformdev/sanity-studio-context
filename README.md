@@ -31,7 +31,7 @@ This Sanity Studio is based on v3 and is wired up with the Uniform plugin that i
 
 1. Open `sanity.config.ts` and import Uniform plugin:
 
-    ```bash
+    ```js
     import {uniformPlugin} from '@uniformdev/sanity-plugin-uniform'
     ```
 
@@ -40,9 +40,9 @@ This Sanity Studio is based on v3 and is wired up with the Uniform plugin that i
     ```js
     plugins: [
         uniformPlugin({
-        apiHost: import.meta.env.SANITY_STUDIO_UNIFORM_HOST || 'https://uniform.app',
-        apiKey: import.meta.env.SANITY_STUDIO_UNIFORM_API_KEY!,
-        projectId: import.meta.env.SANITY_STUDIO_UNIFORM_PROJECT_ID!,
+            apiHost: import.meta.env.SANITY_STUDIO_UNIFORM_HOST || 'https://uniform.app',
+            apiKey: import.meta.env.SANITY_STUDIO_UNIFORM_API_KEY!,
+            projectId: import.meta.env.SANITY_STUDIO_UNIFORM_PROJECT_ID!,
         }),
     ],
     ```
